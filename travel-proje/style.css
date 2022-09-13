@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    
+}
+
+
+
+.header{
+   
+    display: flex;
+    justify-content: space-between;
+   padding: 1% 9%;
+   background-color: rgb(244, 239, 231);
+   position: fixed;
+   z-index: 1000;
+   width: 100%;
+}
+
+.header .logo{
+    display: flex;
+    
+}
+.header .logo i{
+    color: green;
+    font-size: 25px;
+    
+    
+}
+.header .logo h3{
+    margin-left: 10px;
+    font-size: 23px;
+}
+.header .nav {
+    display: flex;
+    margin-right: 30px;
+    
+}
+.header .nav ul{
+    display: flex;
+    
+}
+.header .nav ul li a{
+    margin: 10px;
+    color: black;
+    font-size: 18px;
+
+}
+.header .nav ul li a:hover{
+    color: green;
+    transition: .3s;
+}
+.header .nav i{
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+   
+}
+.nav .fa-bars{
+    display: none;
+}
+.header .nav i:hover{
+    color: green;
+    transition: .3s;
+}
+.home{
+    background-image: url(img/home-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 115vh;
+}
+
+.home{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.home .text{
+    margin-left: auto;
+    margin-right: 190px;
+    overflow: hidden;
+}
+.home .text h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.home .text h1{
+    font-size: 75px;
+    margin-bottom: 20px;
+    color: rgb(10, 134, 10);
+}
+
+.home .text p{
+    line-height: 30px;
+    color: rgb(49, 49, 49);
+
+}
+
+.btn{
+    padding: 15px 45px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    transition: .3s;
+    font-weight: 300;
+   
+}
+.adventure{
+    padding: 2% 8%;
+    margin-top: 60px;
+}
+.adventure .row {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-top: 70px;
+   text-align: center;
+   justify-content: space-around;
+
+   
+}
+
+.adventure .baslik {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+   
+    
+}
+
+
+.adventure .row img{
+    width: 190px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.adventure .row .col-3 h4{
+    margin:5px;
+    font-size: 19px;
+
+}
+.adventure .row .col-3 p{
+    line-height: 25px;
+}
+
+.adventure .row .col-3 .btn{
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 1;
+
+
+}
+.about{
+    padding: 2% 10%;
+    margin-top: 70px;
+    background-color:rgb(237, 238, 236);
+    min-height: 600px;
+    justify-content: center;
+}
+.about .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 60px;
+    
+   
+}
+.about .content .left{
+    box-shadow: 15px 3px 7px -6px rgb(211, 209, 209);
+    
+}
+.about .content .left img{
+    width: 500px;
+    object-fit: cover;
+  
+    
+
+}
+
+.about .content .rigth h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(2, 117, 2);
+}
+
+.about .content .rigth p{
+    line-height: 27px;
+    font-weight: 300;
+    color: rgb(82, 81, 81);
+    margin: 5px;
+
+}
+
+.shop{
+    padding: 2% 8%;
+    justify-content: center;
+   
+}
+.shop .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.shop .row .col{
+    border: 1px solid black;
+    height: 440px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.shop .row .col img{
+    width: 250px;
+    margin: 20px;
+    height: 280px;
+    border: 1px solid black;
+}
+
+.shop .row .col h2{
+    position: relative;
+    bottom: 10px;
+    font-weight: 400;
+}
+.shop .row .col h5{
+    font-size: 18px;
+    color: rgb(8, 115, 8);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+span{
+    text-decoration: line-through;
+}
+
+.shop .row .col i{
+    color: rgb(246, 129, 5);
+}
+.shop .row .col:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: .4s;
+    cursor: pointer;
+    
+}
+.shop .baslik{
+    text-align: center;
+    margin-top: 50px;
+    margin: 35px;
+    font-size: 45px;
+
+
+}
+.shop .row .col img:hover{
+    transform: scale(1.02);
+}
+
+.packages{
+    padding: 2% 7%;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(237, 238, 236);
+
+}
+.packages .baslik{
+    text-align: center;
+    font-size: 45px;
+    margin: 20px;
+    margin-top: 30px;
+}
+.packages .row{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.packages .row .col-4{
+    border: 2px solid black;
+    padding: 12px;
+    margin-top: 30px;
+    border-radius: 5px;
+
+
+}
+.packages .row .col-4:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    
+
+}
+.packages .row .col-4 img{
+    width: 400px;
+    border-radius: 5px;
+    
+}
+
+
+
+.packages .row .col-4 h2{
+    font-weight: 400;
+    margin: 10px;
+
+}
+.packages .row .col-4 p{
+    line-height: 25px;
+    
+}
+
+.packages .row .col-4 h5{
+    font-size: 19px;
+    margin: 10px;
+    color: green;
+}
+.packages .row .col-4 .btn{
+    background: linear-gradient(60deg,rgb(13, 87, 14), rgb(37, 36, 36), rgb(233, 235, 233), rgb(12, 87, 34));
+    background-size: 500% 500%;
+    animation: animeBG 4s ease infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    overflow-y: hidden;
+    color: aliceblue;
+    font-size: 17px;
+    padding: 10px 27px;
+    border: none;
+}
+@keyframes animeBG{
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.reviews{
+    padding: 2% 7%;
+    justify-content: center;
+    align-items: center;
+}
+.reviews .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    align-items: center;
+}
+.reviews .row .col-4 .imagess {
+    display: flex;
+    
+}
+.reviews .row .col-4 .imagess img{
+    width: 100px;
+    border-radius: 50%;
+}
+.reviews .row .col-4  .yazi h2{
+    margin-top: 25px;
+    margin-left: 15px;
+    
+    
+}
+.reviews .row .col-4 .prg {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 64% 75%, 7% 76%, 0 100%);
+    line-height: 30px;
+    background: #eee;
+    width: 400px;
+    padding: 10px;
+    min-height: 210px;
+    border-radius: 7px;
+}
+.reviews .row .col-4  .yazi p{
+    margin-left: 15px;
+    color: darkgreen;
+    font-size: 18px;
+    
+}
+.reviews .baslik{
+    text-align: center;
+    font-size: 45px;
+    margin: 50px;
+    letter-spacing: 0.5px;
+}
+
+.ofter{
+    padding: 2% 7%;
+    justify-content: center;
+    margin-top: 50px;
+    background-color:rgb(237, 238, 236);
+}
+
+.ofter .row{
+    display: flex;
+   flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.ofter .row .col{
+    border: 3px solid;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.ofter .row .col img{
+    width: 40%;
+    margin: 10px;
+}
+.ofter .row .col:hover img{
+    filter: invert(1);
+}
+.ofter .row .col h2{
+    margin: 10px;
+    color: green;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+}
+.ofter .row .col:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.ofter .row .col p{
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.ofter .btn{
+    background: linear-gradient(60deg,rgb(13, 87, 14), rgb(37, 36, 36), rgb(233, 235, 233), rgb(12, 87, 34));
+    background-size: 500% 500%;
+    animation: animeBG 4s ease infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    overflow-y: hidden;
+    color: aliceblue;
+    font-size: 17px;
+    padding: 13px 30px;
+    border: none;
+}
+.ofter .baslik{
+    text-align: center;
+    font-size: 45px;
+    margin: 50px;
+    letter-spacing: 0.5px;
+}
+
+.posts{
+   align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 2% 7%;
+}
+.posts .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+   
+}
+.posts .row .col{
+    width: 33%;
+}
+.posts .row img{
+    width: 90%;
+    border-radius: 10px;
+}
+.posts .row .icn{
+    display: flex;
+    bottom: 30px;
+    z-index: 1000;
+    width: 50%;
+    padding: 8px 30px;
+    justify-content: center;
+    background-color:rgb(13, 31, 26);
+    margin-left: 120px;
+    position: relative;
+    color: greenyellow;
+}
+.posts .row .icn i{
+    margin: 5px;
+}
+.posts .row .icn h5{
+    color: white;
+}
+.posts .baslik{
+    text-align: center;
+    font-size: 45px;
+    margin: 40px;
+    letter-spacing: 0.5px;
+}
+.posts .btn{
+    background: linear-gradient(60deg,greenyellow, rgb(133, 195, 41), rgb(233, 235, 233), rgb(12, 87, 34));
+    background-size: 500% 500%;
+    animation: animeBG 4s ease infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 40px;
+    color: white;
+    font-weight: 300;
+}
+
+.sucribe {
+padding: 2% 7%;
+text-align: center;
+background-color:rgb(237, 238, 236);
+margin-top: 50px;
+align-items: center;
+margin: 1rem auto;
+} 
+.sucribe h2{
+    font-size: 35px;
+    letter-spacing: 0.7px;
+    margin: 15px;
+}
+.sucribe .btnn{
+    display: none;
+}
+
+.sucribe p{
+    line-height: 30px;
+    margin: 50px;
+}
+form{
+    margin-top: 2rem;
+    background: white;
+    border-radius: 5rem;
+    border: #333;
+    padding: 0px 30px  ;
+    display: flex;
+    width: 55%;
+    margin-left: 300px;
+}
+.sucribe .email{
+    border: none;
+    text-align: center;
+    align-items: center;
+   
+   
+    display: flex;
+}
+.sucribe form .btn{
+   margin-left: 410px;
+   margin-bottom: 10px;
+   border-radius: 30px;
+   background: linear-gradient(60deg,rgb(20, 20, 20), rgb(28, 30, 91), rgb(233, 235, 233), rgb(12, 87, 34));
+   background-size: 500% 500%;
+   animation: animeBG 4s ease infinite;
+   animation-direction: alternate;
+   color: white;
+   font-size: 17px;
+   padding: 10px 30px;
+   border: none;
+
+}
+footer{
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(237, 238, 236);
+    
+}
+
+.footer i{
+    margin: 10px;
+    font-size: 30px;
+    border: 0.2px none ;
+    border-radius: 50%;
+    padding: 15px;
+    background: linear-gradient(600deg,rgb(211, 211, 222), rgb(200, 170, 170), rgb(35, 32, 78),rgb(7, 237, 183),white);
+    animation: animeBG 3s ease infinite;
+    animation-direction: alternate;
+    background-size: 500% 500%;
+    margin-top: 10px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.footer i:hover{
+    transform: scale(1.07);
+    transition: .3s;
+}
+.footer h2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.footer h3{
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .header .nav ul {
+        display: none;
+    }
+    .nav .fa-solid{
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .nav .fa-bars{
+        display: block;
+    }
+}
+@media only screen and (max-width: 568px){
+    .home .text{
+        text-align: center;
+        position: relative;
+        left: 40px;
+    }
+    .home .text p{
+        font-weight: 500;
+        
+    }
+    .home .text .btn{
+        background: linear-gradient(600deg,rgb(207, 207, 214), rgb(136, 169, 136), rgb(35, 32, 78),rgb(183, 194, 194),white);
+        animation: animeBG 3s ease infinite;
+        animation-direction: alternate;
+        background-size: 500% 500%;
+        font-size: 20px;
+        padding: 13px 30px;
+    }
+
+    .adventure .row .col-3{
+        margin: 25px;
+    }
+    .shop .row .col{
+        margin: 20px;
+    }
+    .packages .row .col-4 img{
+        position: relative;
+        bottom: 13px;
+        right: 20px;
+       
+    }
+    .reviews .row .col-4{
+        margin: 15px;
+        
+    }
+    .reviews .row .col-4 .prg{
+      
+      line-height: 30px;
+    }
+    .posts .row{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .posts .row .col{
+        width: 100%;
+        margin: 20px;
+        position: relative;
+        right: 20px;
+    }
+    .posts .row .col h2{
+        margin: 15px;
+    }
+    .posts .row .icn{
+        display: none;
+    }
+    .sucribe form{
+       display: none;
+      
+        
+    }
+    .sucribe .btnn{
+        display:inline-block;
+        background: linear-gradient(600deg,rgb(207, 207, 214), rgb(136, 169, 136), rgb(35, 32, 78),rgb(183, 194, 194),white);
+        animation: animeBG 3s ease infinite;
+        animation-direction: alternate;
+        background-size: 500% 500%;
+        font-size: 20px;
+        padding: 13px 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        color: white;
+    }
+}
